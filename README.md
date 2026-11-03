@@ -33,6 +33,21 @@ uv venv -p 3.12 .venv && uv pip install -p .venv/bin/python -r requirements.txt
 - `diagnose.py`: rules that label each failure Architectural / Data-driven / Evaluation
 - `app.py`: Streamlit UI
 - `evaluate.py`: batch robustness numbers for the report
+- `improve.py`: improvement iteration (Naive Bayes + bigrams, rule-based + negation window)
+- `benchmark.py`: latency, load time and model sizes
+- `eda.py`: dataset analysis for the data card
+- `results/`: saved outputs of the scripts above
+
+## Submission documents (`docs/`)
+
+| Milestone | Document |
+|---|---|
+| M1 Problem definition | `docs/01_problem_brief.md` |
+| M2 Data | `docs/02_data_card.md`, `results/eda.txt`, `results/*.png` |
+| M3 Models + experiment log | `docs/03_experiment_log.md` and git history |
+| M4 Evaluation + improvement | `docs/04_evaluation.md`, `results/stress_test.txt`, `results/improvement.txt` |
+| M5 Deployment | `app.py`, `docs/05_deployment.md`, `results/benchmark.txt` |
+| M6 Final | `docs/technical_report.md`, `docs/slides.pptx`, `docs/viva_prep.md`, live demo |
 
 ## Results (measured)
 
