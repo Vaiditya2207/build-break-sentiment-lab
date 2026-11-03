@@ -1,0 +1,32 @@
+SST-2 (GLUE) exploratory analysis
+Note: SST-2 test labels are hidden (all -1), so the validation split is our held-out test set;
+no tuning is done on it.
+
+== Split sizes and class balance ==
+train      n= 67349  negative=29780 (44.2%), positive=37569 (55.8%)
+validation n=   872  negative=428 (49.1%), positive=444 (50.9%)
+test       n=  1821  hidden(-1)=1821 (100.0%)
+
+== Sentence length (tokens, models.tokenize) ==
+train      mean=8.9 median=6 p95=24 max=49  <=3 tokens=28.4%
+validation mean=17.7 median=17 p95=32 max=44  <=3 tokens=0.7%
+test       mean=17.5 median=17 p95=33 max=52  <=3 tokens=1.1%
+
+== Top 20 words per class (train, stopwords removed) ==
+negative: n't(1670), not(1234), too(1151), like(1148), bad(867), no(841), just(711), up(662), i(639), does(607), much(598), story(591), characters(575), been(552), little(528), even(524), most(513), time(509), any(497), your(492)
+positive: good(1139), most(1003), funny(865), story(812), well(787), best(716), not(714), like(679), life(661), comedy(654), up(642), n't(641), love(641), characters(561), will(561), some(558), very(531), time(519), work(504), can(501)
+
+== % sentences with negation (not/no/never/n't) ==
+train      negative 13.0%
+train      positive 4.9%
+validation negative 24.3%
+validation positive 13.5%
+
+== Duplicates and leakage ==
+duplicate sentences within train: 371 (0.55%)
+validation sentences that also appear exactly in train: 0 of 872
+
+== Vocabulary ==
+train vocabulary size (models.tokenize): 13816
+Naive Bayes vocabulary size (CountVectorizer): 13774
+validation tokens OOV w.r.t. NB vocabulary: 841 of 14447 (5.82%)
