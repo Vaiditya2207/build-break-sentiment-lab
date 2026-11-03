@@ -1,0 +1,8 @@
+streamlit
+scikit-learn
+gensim
+transformers
+torch
+datasets
+pandas
+matplotlib
