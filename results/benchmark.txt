@@ -1,0 +1,10 @@
+Machine: arm64 / arm, torch 2.15.0, BERT device: mps:0
+Load time for all 4 models: 7.2 s
+
+Model             median ms   p95 ms  size MB
+Rule-based             0.01     0.01      0.0
+Naive Bayes            0.20     0.27      0.6
+Word2Vec (avg)         0.11     0.17     11.5
+BERT                  20.17    39.86    267.8
+
+Failure handling: 3000-word input -> BERT ('positive', 0.9858052134513855) (truncated to 512 tokens, no crash)

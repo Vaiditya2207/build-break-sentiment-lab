@@ -1,0 +1,16 @@
+
+Accuracy on 200 SST-2 validation sentences and their stress variants:
+
+                negation    oov  original  sarcasm  synonym  typo
+BERT               0.320  0.895     0.910    0.390    0.958  0.90
+Naive Bayes        0.220  0.790     0.790    0.355    0.792  0.78
+Rule-based         0.465  0.525     0.535    0.040    0.708  0.53
+Word2Vec (avg)     0.335  0.675     0.685    0.410    0.792  0.69
+
+Failure categories:
+
+                Architectural  Data-driven  Evaluation
+BERT                        0          239          79
+Naive Bayes               213           94         111
+Rule-based                246          201         141
+Word2Vec (avg)            203          146          97

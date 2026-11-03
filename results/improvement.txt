@@ -1,0 +1,8 @@
+Improvement iteration: before vs after (accuracy)
+full_val_872 = all 872 SST-2 validation sentences; other columns = first 200 + their stress variants
+
+                       full_val_872  negation    oov  original  sarcasm  synonym  typo
+Naive Bayes                   0.806     0.220  0.790     0.790    0.355    0.792  0.78
+Naive Bayes + bigrams         0.820     0.245  0.760     0.760    0.390    0.833  0.74
+Rule-based                    0.563     0.465  0.525     0.535    0.040    0.708  0.53
+Rule-based + negation         0.568     0.475  0.530     0.545    0.050    0.750  0.54

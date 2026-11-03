@@ -80,7 +80,7 @@ class Bert:
         self.pipe = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
     def predict(self, text):
-        out = self.pipe(text)[0]
+        out = self.pipe(text, truncation=True)[0]
         return out["label"].lower(), float(out["score"])
 
     def in_vocab(self, word):
