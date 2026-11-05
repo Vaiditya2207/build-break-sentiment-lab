@@ -47,7 +47,7 @@ uv venv -p 3.12 .venv && uv pip install -p .venv/bin/python -r requirements.txt
 | M3 Models + experiment log | `docs/03_experiment_log.md` and git history |
 | M4 Evaluation + improvement | `docs/04_evaluation.md`, `results/stress_test.txt`, `results/improvement.txt` |
 | M5 Deployment | `app.py`, `docs/05_deployment.md`, `results/benchmark.txt` |
-| M6 Final | `docs/technical_report.md`, `docs/slides.pptx`, `docs/viva_prep.md`, live demo |
+| M6 Final | `docs/ieee_report/ieee_report.pdf` (IEEE paper, source in `ieee_report.tex`), `docs/technical_report.md`, `docs/slides.pptx`, `docs/viva_prep.md`, live demo |
 
 ## Results (measured)
 
